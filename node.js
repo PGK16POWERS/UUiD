@@ -17,10 +17,9 @@ app.get("/", (req,res)=>{
 // POST REQUEST
 app.get("/newUser", (req, res) => {
     globalUUID = uuidv4(); // Assign the UUID to the global variable
-    console.log(globalUUID);
     res.json({ myUUID: globalUUID });
 });
 
 app.listen(6500, ()=>{
     console.log("We Rocking Our what????")
-})
+});
