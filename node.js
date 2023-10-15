@@ -1,10 +1,17 @@
 const express = require("express");
 const app = express();
 const { v4: uuidv4} = require("uuid");
+const ejs = require("ejs");
+const path = require("path");
+
+
+// USE AND STUFF
+app.set("view engine","ejs");
+app.use(express.static("views"))
 
 // GET REQUEST
 app.get("/", (req,res)=>{
-    res.sendFile(path.join(__dirname, "public","index.html"));
+    res.render(path.join(__dirname, "views","index.ejs"));
 });
 
 // POST REQUEST
