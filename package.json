@@ -4,5 +4,16 @@
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
     "uuid": "^9.0.1"
-  }
+  },
+  "name": "uuid",
+  "description": "This is a JavaScript code example that demonstrates how to generate Universally Unique Identifiers (UUIDs) using the uuid npm package.",
+  "version": "1.0.0",
+  "main": "jscript.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon node.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaiberius",
+  "license": "MIT"
 }
